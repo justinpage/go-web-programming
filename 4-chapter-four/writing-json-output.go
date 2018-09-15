@@ -1,14 +1,13 @@
 package main
 
 import (
-	"fmt"
 	"encoding/json"
+	"fmt"
 	"net/http"
 )
 
-
 type Post struct {
-	User string
+	User    string
 	Threads []string
 }
 
@@ -33,7 +32,7 @@ func headerExample(w http.ResponseWriter, r *http.Request) {
 func jsonExample(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	post := &Post{
-		User: "Justin Page",
+		User:    "Justin Page",
 		Threads: []string{"first", "second", "third"},
 	}
 
