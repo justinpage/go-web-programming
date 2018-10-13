@@ -31,4 +31,3 @@ func main() {
 	fmt.Printf("Read %d bytes from file\n", bytes)
 	fmt.Println(string(read2))
 }
-
