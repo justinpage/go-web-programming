@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+    database:
+        image: database-for-gwp 
+        build: .
+        ports:
+            - "5432:5432"
+        volumes:
+            - database-for-gwp:/var/lib/postgresql/data
+volumes:
+    database-for-gwp:
