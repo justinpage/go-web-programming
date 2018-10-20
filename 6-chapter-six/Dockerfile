@@ -1,3 +1,3 @@
 FROM postgres:10.5
 
-COPY ./setup.sql /docker-entrypoint-initdb.d/ 
+COPY ./setting-up-two-related-tables.sql /docker-entrypoint-initdb.d/ 
