@@ -16,7 +16,6 @@ func (h *WorldHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "World!")
 }
 
-
 func main() {
 	hello := HelloHandler{}
 	world := WorldHandler{}

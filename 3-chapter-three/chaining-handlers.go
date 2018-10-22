@@ -7,11 +7,10 @@ import (
 
 type HelloHandler struct{}
 
-func (h HelloHandler) ServeHTTP (w http.ResponseWriter, r *http.Request) {
+func (h HelloHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("3", h)
 	fmt.Fprintf(w, "Hello!")
 }
-
 
 func log(h http.Handler) http.Handler {
 	fmt.Println("2", h)
